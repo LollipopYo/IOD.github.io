@@ -1,0 +1,6 @@
+• Create a new folder = mkdir ***
+• Create another folder inside the first one = mkdir***\***
+• Print the contents of the first folder = ls
+• Change directory to the second folder, and print the current path = pwd
+• Change directory back to the original starting place = cd~
+• Delete the first folder = rmdir ****
