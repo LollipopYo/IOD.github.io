@@ -27,21 +27,21 @@ Hello2("Sam");
 Hello2("Ben");
 Hello2("John");
 
-console.log(Hello2(" Sam"));
-console.log(Hello2(" Ben"));
-console.log(Hello2(" John"));
+console.log(Hello2("Sam"));
+console.log(Hello2("Ben"));
+console.log(Hello2("John"));
 
-if (Hello2(" Sam") == "Hello Sam") {
+if (Hello2("Sam") == "Hello Sam") {
   console.log("something is correct");
 } else {
   console.log("something is wrong");
 }
-if (Hello2(" Ben") == "Hello Ben") {
+if (Hello2("Ben") == "Hello Ben") {
   console.log("something is correct");
 } else {
   console.log("something is wrong");
 }
-if (Hello2(" John") == "Hello John") {
+if (Hello2("John") == "Hello John") {
   console.log("something is correct");
 } else {
   console.log("something is wrong");
