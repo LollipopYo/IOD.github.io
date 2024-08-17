@@ -4,16 +4,66 @@
 <head>
 </head>
 
-<body>
-  <header>
-    <nav>
-      <!-- works like <a href="/index.html">Home</a> -->
-      <a href="/">Home</a>
-    </nav>
-  </header>
+<header>
+  <nav>
+    <!-- works like <a href="/index.html">Home</a> -->
+    <a href="/">Home</a>
+    <a href="/index.html">Index</a>
+  </nav>
 
-  <main>
-  </main>
+</header>
+
+<br>
+
+<form>
+  <form method="POST" action="http://127.0.0.1:5500/form.html">
+    <div>    
+      <label for="fname">First Name:</label>
+      <input type="text" id="fname" name="fname">
+    </div>
+<br>
+    <div>
+      <label for="sname">Last Name:</label>
+      <input type="text" id="sname" name="sname">
+    </div>
+<br>
+    <div>
+      <label for="radio1">JavaScript:</label>
+      <input type="radio" id="radio1" name="radio1">
+      <label for="radio2">HTML:</label>
+      <input type="radio" id="radio2" name="radio2">
+      <label for="radio3">CSS:</label>
+      <input type="radio" id="radio3" name="radio3">
+    </div>
+<br>
+    <div>
+      <label for="checkbox1">Car</label>
+      <input type="checkbox" name="checkbox1" id="checkbox1">
+      <label for="checkbox2">Motocycle</label>
+      <input type="checkbox" name="checkbox2" id="checkbox2">
+      <label for="checkbox3">Scooter</label>
+      <input type="checkbox" name="checkbox3" id="checkbox3">    
+    </div>
+<br>
+    <div>
+      <label for="cars">Car Brand:</label>
+      <select id="cars" name="cars">
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="fiat">Fiat</option>
+        <option value="audi">Audi</option>
+      </select>
+    </div>
+<br>
+    <button type="submit">Submit form</button>
+
+</form>
+
+<body>
+
+
+  <main>   
+    </main>
 
   <footer>Copyright &copy; 2024</footer>
 </body>
