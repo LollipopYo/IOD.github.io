@@ -1,9 +1,7 @@
-document.getElementById("button1")
 
-function submit1(){
-return "Completed"
+function submitform(e){
+e.preventDefault();
 
+
+console.log(document.getElementById("fname"));
 }
-
-console.log(fname)
-

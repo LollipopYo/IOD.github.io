@@ -7,15 +7,16 @@
 <header>
   <nav>
     <!-- works like <a href="/index.html">Home</a> -->
-    <a href="/">Home</a>
-    <a href="/index.html">Index</a>
+    <a href="index.html">Home</a>
+    <a href="./index.html">Index</a>
   </nav>
 
 </header>
 
 <br>
 
-<form>
+<form onsubmit="submitform(event)">
+
   <form method="POST" action="http://127.0.0.1:5500/form.html">
     <div>    
       <label for="fname">First Name:</label>
@@ -56,7 +57,7 @@
       </select>
     </div>
 <br>
-    <button id="button1" type="submit" onclick="submit1()">Submit form</button>
+    <button type="submit">Submit form</button>
 
 </form>
 
@@ -69,6 +70,6 @@
   <footer>Copyright &copy; 2024</footer>
 </body>
 
-<script src=></script>
+<script src="./submission.js"></script>
 
 </html>
