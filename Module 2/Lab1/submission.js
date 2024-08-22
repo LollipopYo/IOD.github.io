@@ -3,9 +3,13 @@ function submitform(e) {
 
   console.log(document.getElementById("fname").value);
   console.log(document.getElementById("sname").value);
-  console.log(document.getElementsByName("JavaScript"));
-  // console.log(document.getElementById("checkbox").value);
-  // console.log(document.getElementById("cars").value);
+  console.log(document.querySelector('input[name="JavaScript"]:checked').value);
+  let car = []
+  document.querySelectorAll('input[name="checkbox"]:checked').forEach((e,i)=>{
+      car.push(e.value)
+  })
+  console.log(car.join(", "), car);
+  
 }
 
 // function radioclick(radio) {

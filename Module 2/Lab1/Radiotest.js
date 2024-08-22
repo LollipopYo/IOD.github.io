@@ -1,7 +1,7 @@
 function submitform(e) {
     e.preventDefault();
 
-    console.log(document.getElementsByName("JavaScript"));
+    console.log(document.querySelector('input[name="JavaScript"]:checked').value);
 
   }
   

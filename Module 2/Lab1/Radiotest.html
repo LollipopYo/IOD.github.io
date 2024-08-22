@@ -4,11 +4,9 @@
 <head>
 </head>
 
-<br>
+<body>
 
-<form onsubmit="submitform(event)">
-
-  <form method="POST" action="http://127.0.0.1:5500/form.html">
+<form method="POST" action="http://127.0.0.1:5500/form.html" onsubmit="submitform(event)">
 
     <div>
       <!-- <label for="radio1">JavaScript</label>
@@ -19,17 +17,19 @@
       <input type="radio" id="radio" name="radio1" onclick="radioclick(this)"> -->
       
       <label>
-        <input type="radio" name="JavaScript" value="JavaScript" id="radio" onclick="radioclick(this)">
+        <input type="radio" id="name" name="JavaScript" value="JavaScript" >`
         JavaScript
       </label>
       <label>
-        <input type="radio" name="JavaScript"  value="HTML" id="radio1" onclick="radioclick(this)">
+        <input type="radio" id="name" name="JavaScript"  value="HTML">
         HTML
       </label>
       <label>
-        <input type="radio" name="JavaScript" value="CSS" id="radio2" onclick="radioclick(this)">
+        <input type="radio" id="name" name="JavaScript" value="CSS">
         CSS
       </label>
+    
+      </div>
 
 <br>
     <button type="submit">Submit form</button>
@@ -45,6 +45,6 @@
   <footer>Copyright &copy; 2024</footer>
 </body>
 
-<script src="./submission.js"></script>
+<script src="./Radiotest.js"></script>
 
 </html>
