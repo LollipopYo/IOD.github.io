@@ -37,11 +37,36 @@
 
 // console.log(truncate('This text will be truncated if it is too long', 25));
 
-// const animals = ['Tiger', 'Giraffe'];
+3.
 
-// animals.push("Pig", "Goat");
+const animals = ['Tiger', 'Giraffe'];
 
+
+// a. 
+animals.push("Pig", "Goat");
 // console.log(animals)
+
+// b.
+animals.unshift("Horse","Hippo");
+// console.log(animals);
+
+// c.
+animals.sort ();
+// console.log(animals);
+
+// d.
+function replaceMiddleAnimal(arr, newValue) {
+  if (arr.length === 0) {
+    throw new Error}
+    return (animals);
+  };
+
+console.log(replaceMiddleAnimal(animals, newValue = "Penguin"));
+
+
+
+
+
 
 
 
