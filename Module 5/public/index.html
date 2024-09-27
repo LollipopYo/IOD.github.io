@@ -1,8 +1,63 @@
-<html>
-<title>My first page</title>
+<html lang="en">
+
+<head>
+    <title>Calculator Example</title>
+</head>
 
 <body>
-    <h1>Hello Friends</h1>
+    <div>Result
+        <span id="addresult"></span>
+    </div>
 </body>
+<script>
+    let num1 = 2;
+    let num2 = 4;
+    fetch(`/calculator/add?num1=${num1}&num2=${num2}`)
+        .then(response => response.json())
+        .then(data => {
+            document.getElementById("addresult").innerHTML =
+                data.result;
+        })
+</script>
+<div>Result
+    <span id="subtractresult"></span>
+</div>
+<script>
+    let num3 = 2;
+    let num4 = 4;
+    fetch(`/calculator/subtract?num1=${num3}&num2=${num4}`)
+        .then(response => response.json())
+        .then(data => {
+            document.getElementById("subtractresult").innerHTML =
+                data.result;
+        })
+</script>
+<div>Result
+    <span id="multiplyresult"></span>
+</div>
+<script>
+    let num5 = 2;
+    let num6 = 4;
+    fetch(`/calculator/multiply?num1=${num5}&num2=${num6}`)
+        .then(response => response.json())
+        .then(data => {
+            document.getElementById("multiplyresult").innerHTML =
+                data.result;
+        })
+</script>
+<div>Result
+    <span id="divideresult"></span>
+</div>
+<script>
+    let num7 = 2;
+    let num8 = 4;
+    fetch(`/calculator/divide?num1=${num7}&num2=${num8}`)
+        .then(response => response.json())
+        .then(data => {
+            document.getElementById("divideresult").innerHTML =
+                data.result;
+        })
+</script>
+
 
 </html>
