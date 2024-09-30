@@ -1,17 +1,17 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState } from "react";
+import reactLogo from "./assets/react.svg";
+import viteLogo from "/vite.svg";
+import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0)
-  const [bool,setBool] = useState(false);
+  const [count, setCount] = useState(0);
+  const [bool, setBool] = useState(false);
   const [inputValue, setInputValue] = useState();
-  const h1 = ({firstName, lastName})=> (
-  <div>
-    <h1>Hello {firstName}</h1>
-    <h2>{lastName}</h2>
-  </div>
+  const h1 = ({ firstName, lastName }) => (
+    <div>
+      <h1>Hello {firstName}</h1>
+      <h2>{lastName}</h2>
+    </div>
   );
 
   return (
@@ -24,14 +24,16 @@ function App() {
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
-      {h1({firstName: "Melody", lastName: "Ting"})}
+      {h1({ firstName: "Melody", lastName: "Ting" })}
       <div className="card">
+        <input onKeyUp={(event) => setInputValue(event.target.value)} />
+        {inputValue}
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
         </button>
 
-        <button onClick={()=> setBool(!bool)}>Bool</button>
-        {bool ? <div>"Yes" </div> : <div> "No"</div>}
+        <button onClick={() => setBool(!bool)}>Bool</button>
+        {bool ? <div>Yes</div> : <div>No</div>}
 
         <p>
           Edit <code>src/App.jsx</code> and save to test HMR
@@ -41,7 +43,7 @@ function App() {
         Click on the Vite and React logos to learn more
       </p>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
