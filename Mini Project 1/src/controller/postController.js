@@ -1,7 +1,7 @@
-const posts = [{title: "Test", body: "testing", id:1}];
+const posts = [{ title: "Test", body: "testing", id: 1 }];
 
 const getPosts = () => {
-    return posts;
+  return posts;
 };
 
 const addPost = (post) => {
@@ -12,10 +12,12 @@ const addPost = (post) => {
   posts.push(resultPost);
   return resultPost;
 };
-const deletePost= (id) => {
-    const idIndex = posts.map((post) => post.id).indexOf(id);
-    if(idIndex<0) throw new Error();
-    posts.splice(idIndex, 1);
+const deletePost = (id) => {
+  console.log(posts.map((post) => post.id));
+  const idIndex = posts.findIndex(post=> post.id==id)
+  console.log("idIndex", idIndex);
+  if (idIndex < 0) throw new Error();
+  posts.splice(idIndex, 1);
 };
 
 module.exports = {
@@ -23,3 +25,4 @@ module.exports = {
   addPost,
   deletePost,
 };
+
