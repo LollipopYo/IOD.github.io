@@ -3,7 +3,7 @@ const posts = [
     day: "Sunday",
     date: "2024-10-12",
     taskname: "Finish Mini Project",
-    task: "Prepare for çPresentation",
+    task: "Prepare for Presentation",
     id: 6,
     updated: true,
   },

@@ -1,6 +1,5 @@
 let posts = [];
 
-// Render posts function
 function render() {
   document.querySelector("#card-list").innerHTML = "";
 
@@ -27,7 +26,7 @@ function render() {
         "line-through";
     }
 
-    // Event listener for "Done" button
+    // Look up to determine done/strikethrough
     template.querySelector(".card-strike").addEventListener("click", () => {
       item.updated = !item.updated;
 
@@ -44,7 +43,7 @@ function render() {
         .catch((error) => console.error("Error updating post:", error));
     });
 
-    // Event listener for "Delete" button
+    
     template.querySelector(".card-delete").addEventListener("click", () => {
       fetch(`/posts/${item.id}`, {
         method: "DELETE",
@@ -89,7 +88,7 @@ function onPostSubmit(e) {
 
   if (new Date(date) < new Date()) {
     document.getElementById("errormessage").innerHTML =
-      "Date must be today or later!";
+      "Date must be later date!";
     return;
   }
 
@@ -136,7 +135,7 @@ function countOutstandingPosts() {
 
 function setMinDate() {
   const today = new Date().toISOString().split("T")[0]; // Get today's date in YYYY-MM-DD format
-  document.getElementById("firsttitle").setAttribute("min", today -1);
+  document.getElementById("firsttitle").setAttribute("min", today);
 }
 
 // Call the function when the page loads
