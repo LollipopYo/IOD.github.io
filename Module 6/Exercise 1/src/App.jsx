@@ -7,10 +7,10 @@ function App() {
   const [count, setCount] = useState(0);
   const [bool, setBool] = useState(false);
   const [inputValue, setInputValue] = useState();
-  const h1 = ({ firstName, lastName }) => (
+  const h1 = ({ firstName}) => (
     <div>
       <h1>Hello {firstName}</h1>
-      <h2>{lastName}</h2>
+      <h2>{'Welcome to the App!'}</h2>
     </div>
   );
 
@@ -24,7 +24,7 @@ function App() {
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
-      {h1({ firstName: "Melody", lastName: "Ting" })}
+      {h1({ firstName: "Melody"})}
       <div className="card">
         <input onKeyUp={(event) => setInputValue(event.target.value)} />
         {inputValue}
@@ -35,6 +35,8 @@ function App() {
         <button onClick={() => setBool(!bool)}>Bool</button>
         {bool ? <div>Yes</div> : <div>No</div>}
 
+        
+
         <p>
           Edit <code>src/App.jsx</code> and save to test HMR
         </p>
@@ -44,6 +46,10 @@ function App() {
       </p>
     </>
   );
+
+  
 }
+
+
 
 export default App;
